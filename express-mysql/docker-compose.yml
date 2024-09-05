@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+
+    mysql3344:
+        image: mysql:latest
+        container_name: db_3344
+        restart: always
+        ports: 
+            - "3344:3306"
+        environment:
+            MYSQL_DATABASE: myDb
+            MYSQL_USER: user1
+            MYSQL_PASSWORD: 1234
+            MYSQL_ROOT_PASSWORD: P@ssw0rd
+        volumes:
+            - ./mysql-data/:/var/lib/mysql

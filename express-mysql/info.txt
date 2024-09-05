@@ -1,0 +1,7 @@
+express-mysql
+npm -v
+node -v
+npm cache clean --force 
+npm install express cors mysql2
+node server.js
+http://localhost:3333/test
